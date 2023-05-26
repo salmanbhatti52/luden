@@ -6,11 +6,11 @@ import 'package:flutter_windowmanager/flutter_windowmanager.dart';
 void main() async {
   runApp(const MyApp());
   WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
-    if(Platform.isAndroid) {
+    if (Platform.isAndroid) {
       await FlutterWindowManager.addFlags(FlutterWindowManager.FLAG_SECURE);
     }
   });
-} 
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Sportograph',
+      title: 'Luden',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
