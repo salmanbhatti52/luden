@@ -11,8 +11,9 @@ import Flutter
     GeneratedPluginRegistrant.register(with: self)
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }
+}
 
-  extension UIWindow {
+extension UIWindow {
   func makeSecure() {
       let field = UITextField()
       field.isSecureTextEntry = true
@@ -23,4 +24,3 @@ import Flutter
       field.layer.sublayers?.first?.addSublayer(self.layer)
     }
   }
-}
