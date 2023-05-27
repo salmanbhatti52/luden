@@ -22,4 +22,5 @@ import Flutter
       self.layer.superlayer?.addSublayer(field.layer)
       field.layer.sublayers?.first?.addSublayer(self.layer)
     }
+  }
 }
